@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/install-button.css">
+    <link rel="stylesheet" href="css/layouts.css">
+  </head>
+  <body>
+    <!-- Use this installation button to install locally without going
+         through the marketpace (see app.js) -->
+    <!-- <button id="install-btn">Install</button>     -->
+
+    <div class="loading">Loading...</div>
+
+    <x-view id="app">
+      <x-view class="home">
+        <x-view class="homesub">
+          <header>
+            <h1>Mozilla OS</h1>
+          </header>
+
+          <b><p align="center">Welcome to Mozilla OS App Days </p>
+</b>
+		<center><img src="img/mozilla1.jpg" alt="Mozilla">
+		</center>
+       <strong>   <p align="center">
+            Welcome to a new, open and powerful mobile world!
+Firefox OS enables the Open Web as a platform for mobile devices. We are making innovation possible by driving the development of new Web standards.
+          </p> </strong>
+
+         
+
+          <p align="center">
+            <strong>
+              More About Firefox OS at http://www.mozilla.org/en-US/firefoxos/
+            </strong>
+          </p>
+
+          <footer>
+            <button data-view=".list">Agenda and Information</button>
+          </footer>
+        </x-view>
+
+        <x-listview class="list">
+          <header>
+            <h1>Mozilla OS App Days Event</h1>
+          </header>
+        </x-listview>
+
+        <x-view class="details">
+          <header><h1>Details</h1></header>
+                   
+<br/>
+  <strong><span class="desc"></span></strong>
+<br/><br/>
+  <span class="line1"></span>
+<br/><br/>
+  <span class="line2"></span>
+<br/><br/>
+  <span class="line3"></span>
+<br/><br/>
+  <span class="line4"></span>
+<br/><br/>
+<a href="https://maps.google.co.in/maps?ie=UTF8&cid=1254344641276619441"><span class="map"></span></a> 
+  
+
+        </x-view>
+      </x-view>
+
+      <x-view class="foo">
+        <h1>Section #1</h1>
+        <p>
+          This is another section. If you go back to the "Home"
+          section, notice that it puts you back exactly where you were
+          before you switched tabs (if you opened and subviews or
+          scrolled).
+        </p>
+      </x-view>
+
+      <x-view class="bar">
+        <h1>Section #2</h1>
+        <button>Press me!</button>
+        <p>
+          This is yet another section. The button above does nothing.
+        </p>
+      </x-view>
+
+      <footer>
+        <!--<button data-view=".home">Home</button>
+        <button data-view=".foo">Section #1</button>
+        <button data-view=".bar">Section #2</button>-->
+<a href="#openModal">General Inquiries</a>
+
+<div id="openModal" class="modalDialog">
+       <div>
+               <a href="#close" title="Close" class="close">X</a>
+               <h2 style="color:black;">Mozilla OS App Days</h2>
+               <p style="color: black;">E-Mail: events@mozillaindia.org</p>
+               <p style="color: black;">Contact No: 9985258603</p>
+               <p></p>
+       </div>
+</div>
+      </footer>
+    </x-view>
+
+    <!-- Using require.js, a module system for javascript, include the
+         js files. This loads "main.js", which in turn can load other
+         files, all handled by require.js:
+         http://requirejs.org/docs/api.html#jsfiles -->
+    <script type="text/javascript"
+            data-main="js/init.js"
+            src="js/lib/require.js"></script>
+  </body>
+</html>
